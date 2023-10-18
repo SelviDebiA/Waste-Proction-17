@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_mitra/Tariksaldo mitra.css">
+    <title>Tarik Saldo</title>
+
+    <link rel="icon" href="../../assets/logoicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-dollar?f=classic&s=regular">
+
+
+</head>
+<body>
+
+<!--Navbar oi oi oi-->
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../../assets/logo.png" alt="Logo">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Cari...">
+            <button type="submit">Cari</button>
+        </div>
+        <ul class="menu">
+            <li><a href="dashboard mitra.html">BERANDA</a></li>
+          <li><a href="bantuan mitra.html">BANTUAN</a></li>
+          <li><a href="#4">KONTAK</a></li>
+        </ul>
+
+        <div class="icons">
+            <a href="Notifikasi mitra.html"><i class="fa-regular fa-bell"></i></a> <!-- Ikon Notifikasi -->
+            <a href="profil mitra.html" style="position: relative; display: inline-block;">
+                <i class="fa-regular fa-user" style="background-color: #30A430; border-radius: 50%; width: 45px; height: 45px; line-height: 45px; text-align: center; color: white; font-size: 20px;"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<!--section di bawah navbar bgbgbgbg-->
+    <section class="background-section">
+        <!-- disini kosong aj ya ges, kita main di css ajaaaa -->
+    </section>
+
+
+
+
+
+
+
+<!--section table box-->
+
+<section>
+    <div class="table-box" id="tabelSaya">
+        <script>
+            // Mengambil elemen tabel berdasarkan ID
+        var tabel = document.getElementById("tabelSaya");
+    
+        // Mengatur posisi dan ukuran tabel
+        tabel.style.position = "absolute"; // Mengubah posisi menjadi absolute
+        tabel.style.top = "150px"; // Menggeser tabel ke atas 
+        tabel.style.left = "500px"; // Mengatur posisi horizontal  (kiri)
+        tabel.style.width = "500px"; // Mengubah lebar 
+        tabel.style.height = "650px"; // Mengubah tinggi 
+        </script>
+    
+    
+    
+        <div>
+            <h2>Penarikan Saldo</h2>
+        </div>
+        <!-- <div class="payment-item">
+            <i class="fa-sharp fa-solid fa-sack-dollar icon-green"></i>
+            <h4 class="p">Transfer Bank</h4>
+            <i id="toggleIcon" class="fa-solid fa-toggle-off"></i>
+        </div>
+        <div><p class="p1">5000 Koin</p></div> -->
+            <!-- <script>
+                    // Mengambil elemen ikon
+                    var toggleIcon = document.getElementById("toggleIcon");
+                    var isActive = false;
+    
+                    // Menambahkan event listener untuk mengatasi klik
+                    toggleIcon.addEventListener("click", function () {
+                    // Toggle status ikon saat diklik
+                    isActive = !isActive;
+                    if (isActive) {
+                        toggleIcon.classList.remove("fa-toggle-off");
+                        toggleIcon.classList.add("fa-toggle-on");
+                    } else {
+                        toggleIcon.classList.remove("fa-toggle-on");
+                        toggleIcon.classList.add("fa-toggle-off");
+                    }
+                    });
+            </script>
+     -->
+    
+    
+        <div class="bank">
+            <div class="all">
+                <h2 style="margin-top: 40px;">Transfer Bank</h2>
+                <div class="p">
+                    <p>Lihat Semua</p>
+                </div>
+               
+            </div>
+            
+            
+            <div class="payment-mandiri">
+                <img class="payment-image" src="../../assets/mandiri.png" alt="Mandiri Virtual Account">
+                <h4 class="mandiri text-c">Mandiri Virtual Account <i class="fa-solid fa-circle icon-c1 icon-gray1"></i></h4>
+            </div>
+    
+            <div class="payment-bca">
+                <img class="payment-image" src="../../assets/bca.png" alt="BCA Virtual Account">
+                <h4 class="bca text-c">BCA Virtual Account <i class="fa-solid fa-circle icon-c2 icon-gray2"></i></h4>
+            </div>
+            <script>
+            var icon1 = document.querySelector(".icon-gray1");
+            var icon2 = document.querySelector(".icon-gray2");
+    
+            icon1.addEventListener("click", function() {
+                if (!icon1.classList.contains("icon-bulat")) {
+                    icon1.classList.remove("icon-gray1");
+                    icon1.classList.add("icon-bulat");
+                    icon2.classList.remove("icon-bulat");
+                    icon2.classList.add("icon-gray2");
+                }
+            });
+    
+            icon2.addEventListener("click", function() {
+                if (!icon2.classList.contains("icon-bulat")) {
+                    icon2.classList.remove("icon-gray2");
+                    icon2.classList.add("icon-bulat");
+                    icon1.classList.remove("icon-bulat");
+                    icon1.classList.add("icon-gray1");
+                }
+            });
+            </script>
+           
+    
+
+
+    
+            <div class="ringkasan">
+                <h2 style="margin-top: 40px;">Ringkasan Pembayaran</h2>
+                <div class="ringkasan-pembayaran">
+                    <div class="waktu">
+                        <p>Total Pendapatan</p>
+                    </div>
+                    <div class="total">
+                        <p>Rp.57.500</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="custom-div">
+                <div class="left-side">
+                    <h2 class="total">Total Tranfer</h2>
+                    <h2 class="total">Rp57.500</h2>
+                </div>
+                <div class="right-side">
+                    <input type="button" class="signup-button" value="Tarik Saldo" onclick="window.location.href='tariksaldo2 mitra.html';">
+                </div>
+            </div>      
+    
+    </div>
+</section>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!--section k5-->
+
+<section class="section5">
+    <div class="logo5">
+        <img src="../../assets/logofooter.png" alt="Logo">
+    </div>
+    <div class="contact-info5">
+        <div class="left-info5">
+            <h4 class="address5"><i class="fas fa-map-marker-alt icon-green"></i> Alamat Kantor</h4>
+            <p class="address-details5">Jalan Mulawarman No. 15, Kelurahan Bongsari, Kec. <br>Semarang Barat, Kota Semarang, Jawa Tengah</p>
+
+            <h4 class="phone5"><i class="fas fa-phone icon-green"></i> Telepon</h4>
+            <p class="phone-number5">+62 812 28116729</p>
+
+            <h4 class="email5"><i class="fas fa-envelope icon-green"></i> Surel</h4>
+            <p class="email-address5">westeproction@gmail.com</p>
+        </div>
+        <div class="right-info5">
+            <h4 class="privacy-policy5">Tautan</h4>
+            <p class="privacy-policy5">Kebijakan Privasi</p>
+            <p class="terms-conditions5">Syarat dan Ketentuan</p>
+            <p class="promo5">Promo</p>
+            <p class="contact-us5">Hubungi Kami</p>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+
+<footer id="4">
+<div class="footer-left">
+    <p>©WASTE PROCTION, 2023. ALL RIGHTS RESERVED</p>
+</div>
+<div class="footer-center">
+    <p style="margin-left: 70%" >Follow kami di:</p>
+</div>
+<div class="footer-right">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* Waste Proction
+
+amel
+selvi
+zila
+ziko
+febri
+fikri
+
+*/
+
+
+/* navbar zzzzzzzzzzzzzzzzz*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Klee+One:wght@400;600&display=swap");
+* body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #43A046;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #43A046;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button:hover,
+.search button:hover {
+    background-color: #1B5E1F; /* Warna hijau yang berbeda saat tombol dihover */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Ikon notifikasi dan ikon akun */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #30A430;
+    margin-left: 40px; /* Atur jarak antara ikon */
+    font-size: 27px; /* Sesuaikan ukuran ikon */
+    transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+}
+
+/* Efek hover */
+.icons a:hover {
+    background-color: #1B5E1F; 
+    color: white; 
+}
+
+
+
+  /* section k1 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+  /* CSS untuk section dengan gambar latar belakang */
+.background-section {
+    background-image: url('../assets/bgnav.jpg'); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Agar gambar latar belakang menutupi seluruh section */
+    background-position: center; /* Mengatur posisi gambar latar belakang di tengah section */
+    height: 180px; /* Sesuaikan tinggi section sesuai kebutuhan Anda */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+  /* section k5 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.section5 {
+    display: flex;
+    flex-direction: column; /* Mengatur susunan elemen ke tumpukan vertikal */
+    font-size: 18px;
+    padding: 50px;
+}
+
+.logo5 img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+    margin-left: 40px;
+}
+
+.contact-info5 {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.left-info5 {
+    margin-left: 20px;
+}
+
+.right-info5 {
+    margin-left: 40%;
+}
+
+.icon-green {
+    font-size: 36px;
+    color: #30A430;
+    margin-right: 20px;
+}
+
+
+.artikel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    padding: 30px;
+    background: #ffffff;
+    margin-top: -110px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: white;
+    padding: 5px;
+    color: #30A430;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.jadwal-artikel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-tambah {
+    padding: 10px 35px;
+    background-color: #30A430;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.btn-tambah:hover {
+    background-color: #1B5E1F;
+    
+}
+
+.history p{
+    margin: 0px;
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.history .first-div {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history .second-div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.history .third-div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+/* footer  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+/* Centering the social icons horizontally and vertically */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Membagi footer menjadi 3 kolom */
+    background-color: #30A430;
+    height: 100px;
+    font-weight: normal;
+    align-items: center; /* Pusatkan vertikal */
+    color: white; /* Warna teks putih */
+    font-size: 16px; /* Ukuran teks */
+    padding-left: 100px;
+}
+
+/* Mengubah warna ikon menjadi putih */
+.social-icons a i {
+    color: white;
+}
+
+/* Mengubah warna ikon menjadi biru saat dihover */
+.social-icons a:hover i {
+    color: #000000;
+}
+/* Mengubah ukuran ikon */
+.social-icons a i {
+    font-size: 40px; /* Sesuaikan ukuran ikon sesuai keinginan Anda */
+    margin: 20px; /* Mengatur jarak antara ikon */
+}
+

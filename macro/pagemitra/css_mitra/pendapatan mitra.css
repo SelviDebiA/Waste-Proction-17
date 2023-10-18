@@ -1,0 +1,289 @@
+/* Waste Proction
+
+amel
+selvi
+zila
+ziko
+febri
+fikri
+
+*/
+
+
+/* navbar zzzzzzzzzzzzzzzzz*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #43A046;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #43A046;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button:hover,
+.search button:hover {
+    background-color: #1B5E1F; /* Warna hijau yang berbeda saat tombol dihover */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Ikon notifikasi dan ikon akun zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #30A430;
+    margin-left: 40px; /* Atur jarak antara ikon */
+    font-size: 27px; /* Sesuaikan ukuran ikon */
+    transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+}
+
+/* Efek hover */
+.icons a:hover {
+    background-color: #1B5E1F; 
+    color: white; 
+}
+
+
+
+/* section k1 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+/* CSS untuk section dengan gambar latar belakang */
+
+.background-section {
+    background-image: url('../../assets/bgnav.jpg'); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Agar gambar latar belakang menutupi seluruh section */
+    background-position: center; /* Mengatur posisi gambar latar belakang di tengah section */
+    height: 180px; /* Sesuaikan tinggi section sesuai kebutuhan */
+}
+
+
+
+
+
+/* Gaya untuk tabel box  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+.table-box1 {
+    background-color: white; /* Latar belakang putih */
+    margin: 0 auto; /* Posisikan tabel di tengah halaman */
+    padding: 20px; /* Atur padding untuk membuat efek box */
+    border: 1px solid #d6d6d6; /* Tambahkan border untuk memberi efek kotak */
+    border-radius: 10px; /* Mengatur sudut elemen */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    z-index: 2; /* Tingkatkan nilai z-index untuk memastikan elemen berada di atas */
+    
+}
+
+.table-box2 {
+    background-color: white; /* Latar belakang putih */
+    margin: 0 auto; /* Posisikan tabel di tengah halaman */
+    padding: 20px; /* Atur padding untuk membuat efek box */
+    border: 1px solid #d6d6d6; /* Tambahkan border untuk memberi efek kotak */
+    border-radius: 10px; /* Mengatur sudut elemen */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    z-index: 2; /* Tingkatkan nilai z-index untuk memastikan elemen berada di atas */
+    
+}
+
+.oi-tagihan1 {
+    margin-top: -120px;
+    color: #ffffff;
+    margin-left: 295px;
+    font-size: 15px;
+    font-weight: bold ;
+
+}
+
+.oi-tagihan2 {
+    margin-left: 260px;
+    color: white;
+    font-size: 40px;
+    margin-top: -15px;
+    display: flex;
+  justify-content: space-between; /* Membagi halaman menjadi dua kolom dengan jarak di antara mereka */
+}
+
+
+.bayartagihan {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -262px;
+    border: 0.5px solid rgb(0, 126, 23);
+
+    
+}
+
+.bayartagihan:hover {
+    background-color: #1B5E1F; /* Warna hijau yang berbeda saat tombol dihover  zzzzzzzzzzzzzzzzzz*/
+    color: #fff; /* Teks menjadi putih saat tombol dihover    zzzzzzzzzzzzzzzzzzzzzzz */
+}
+
+.koin {
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: -25px;
+    
+}
+
+
+
+.history {
+    margin-top: -60px;
+}
+.history1 {
+    margin-top: -30px;
+}
+
+.history-entry {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black; /* Menambahkan garis hitam */
+}
+
+.history-details-left {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.history-details-right {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.riwayat p {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px; /* Mengatur radius border sesuai dengan preferensi  */
+    justify-content: space-between;
+    margin: 5px;
+}
+
+
+
+  /* section k5 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.section5 {
+    display: flex;
+    flex-direction: column; /* Mengatur susunan elemen ke tumpukan vertikal */
+    font-size: 18px;
+    padding: 50px;
+}
+
+.logo5 img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+    margin-left: 40px;
+}
+
+.contact-info5 {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.left-info5 {
+    margin-left: 20px;
+}
+
+.right-info5 {
+    margin-left: 40%;
+}
+
+.icon-green {
+    font-size: 36px;
+    color: #30A430;
+    margin-right: 20px;
+}
+
+
+/* footer  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+/* Centering the social icons horizontally and vertically */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Membagi footer menjadi 3 kolom */
+    background-color: #30A430;
+    height: 100px;
+    align-items: center; /* Pusatkan vertikal */
+    color: white; /* Warna teks putih */
+    font-size: 16px; /* Ukuran teks */
+    padding-left: 100px;
+}
+
+/* Mengubah warna ikon menjadi putih */
+.social-icons a i {
+    color: white;
+}
+
+/* Mengubah warna ikon menjadi biru saat dihover */
+.social-icons a:hover i {
+    color: #000000;
+}
+/* Mengubah ukuran ikon */
+.social-icons a i {
+    font-size: 40px; /* Sesuaikan ukuran ikon sesuai keinginan */
+    margin: 20px; /* Mengatur jarak antara ikon */
+}
+

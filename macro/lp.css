@@ -1,0 +1,630 @@
+/* Waste Proction
+
+amel
+selvi
+zila
+ziko
+febri
+fikri
+
+*/
+
+
+/* navbar zzzzzzzzzzzzzzzzz*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 98%;
+    z-index: 1000; 
+
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #43A046;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #43A046;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button:hover,
+.search button:hover {
+    background-color: #1B5E1F; /* Warna hijau yang berbeda saat tombol dihover */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* section di bawah nabar zzzzzzzzzzzzzzzzz*/
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: transparent;
+}
+
+.title {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-button,
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button {
+    background-color: #30A430; /* Warna hijau untuk Daftar Sekarang zzzzzzzzzzzzz*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: transparent; /* Tombol Masuk dengan background transparan  zzzzzzzzzzzzzzzzz */
+    border: 2px solid #30A430; /* Garis tombol dengan warna hijau  zzzzzzzzzzzzzzzzzzzzz*/
+    color: #30A430; /* Teks berwarna hijau  zzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover,
+.login-button:hover {
+    background-color: #1B5E1F; /* Warna hijau yang berbeda saat tombol dihover  zzzzzzzzzzzzzzzzzz*/
+    color: #fff; /* Teks menjadi putih saat tombol dihover    zzzzzzzzzzzzzzzzzzzzzzz */
+}
+
+.image-container {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.image-container2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container3 img {
+    max-width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* section k2 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.about-section2 {
+    background-color: #F5F7FA;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.about-title2 {
+    color: #30A430;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-content2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-image2 img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 200px; /* Membuat jarak dari kiri */
+    margin-right: 30px; /* Menggeser gambar ke kanan sebanyak 10 piksel */
+    flex: 1; /* Agar gambar memenuhi tinggi div */
+}
+
+
+.about-text2 {
+    color: #000;
+    text-align: left;
+    flex: 1;
+    margin-left: auto; /* Menambahkan margin kiri antara gambar dan teks */
+}
+
+
+/* section k3 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap; /*  kotak-kotak untuk wrap ke baris berikutnya */
+    justify-content: space-between; /*  memberikan jarak yang sama antara kotak-kotak */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left; /* Menentukan teks "Fitur" ke kiri */
+    margin-bottom: 120px;
+}
+
+.feature-title3 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    width: 100%; /* memastikan teks "Fitur" mengambil lebar penuh */
+    margin-left: 40px;
+}
+
+.feature-box3 {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.3333% - 80px); /* membuat setiap kotak memiliki lebar yang sama */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan ke dalam kotak */
+}
+
+.icon-green {
+    font-size: 36px;
+    color: #30A430;
+    margin-right: 20px;
+}
+
+.feature-content3 {
+    flex: 1;
+}
+
+.feature-heading3 {
+    color: #30A430;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #000;
+    font-size: 16px;
+}
+
+
+
+/* section k4 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.about-section4 {
+    background-color: #F5F7FA;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-title4 {
+    color: #30A430;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Mengatur teks judul ke kiri */
+    margin-left: 40%;
+}
+
+.about-title4text {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Mengatur teks judul ke kiri */
+    margin-left: 40%;
+}
+
+.about-content4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-image4 img {
+    max-width: auto;
+    height: auto;
+    margin-right: auto; /* Mengurangi margin kanan gambar */
+    margin-left: 40%;
+}
+
+.about-text4 {
+    flex: 1; /* Agar teks judul memenuhi tinggi div */
+    margin-left: auto;
+}
+
+
+/* section k5 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+.section5 {
+    display: flex;
+    flex-direction: column; /* Mengatur susunan elemen ke tumpukan vertikal */
+    font-size: 18px;
+    padding: 50px;
+}
+
+.logo5 img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+    margin-left: 40px;
+}
+
+.contact-info5 {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.left-info5 {
+    margin-left: 20px;
+}
+
+.right-info5 {
+    margin-left: 40%;
+}
+
+
+
+/* footer  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+/* Centering the social icons horizontally and vertically */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Membagi footer menjadi 3 kolom */
+    background-color: #30A430;
+    height: auto;
+    align-items: center; /* Pusatkan vertikal */
+    color: white; /* Warna teks putih */
+    font-size: 12pt; /* Ukuran teks */
+}
+.footer-left {
+    margin-left: 20%;
+}
+
+/* Mengubah warna ikon menjadi putih */
+.social-icons a i {
+    color: white;
+}
+
+/* Mengubah warna ikon menjadi biru saat dihover */
+.social-icons a:hover i {
+    color: #000000;
+}
+/* Mengubah ukuran ikon */
+.social-icons a i {
+    font-size: 40px; /* Sesuaikan ukuran ikon sesuai keinginan  */
+    margin: 20px; /* Mengatur jarak antara ikon */
+}
+
+.f {
+    max-width: auto;
+    max-height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive zzzzzzzzzzzzzzzzz */
+
+
+/* CSS untuk tampilan desktop */
+@media (min-width: 1024px) {
+    /* Tambahkan CSS untuk desktop di sini */
+}
+
+/* CSS untuk tampilan tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tambahkan CSS untuk tablet di sini */
+}
+
+/* CSS untuk tampilan ponsel */
+@media (max-width: 500px) {
+    /* Tambahkan CSS untuk ponsel di sini */
+}
+
+.table-box {
+    width: 100%; /* Lebar tabel mengisi seluruh lebar parent (biasanya body atau div lain) */
+}
+/* Tampilan desktop */
+@media (min-width: 1024px) {
+    .table-box {
+        width: 70%; /* Lebar tabel 70% dari lebar parent */
+    }
+}
+
+/* Tampilan ponsel */
+@media (max-width: 767px) {
+    .table-box {
+        width: 100%; /* Lebar tabel 100% dari lebar parent */
+    }
+}
+
+
+
+
+
+
+
+
+#mobile-menu-button {
+    display: grid;
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#mobile-menu-button span {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Tampilkan tombol di perangkat seluler */
+@media (max-width: 768px) {
+    #mobile-menu-button {
+        display: block;
+    }
+    #menu {
+        display: none; /* Sembunyikan menu di awal */
+    }
+}
+
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+    display: inline; /* Menghapus bullet point di samping teks */
+}
+
+/* Tampilan vertikal di HP */
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px 0; /* Memberi jarak antara item menu secara vertikal */
+    }
+}
+
+
+
+
+  .feature-section {
+    background-color: #F5F7FA;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .feature-title3 {
+    color: #30A430;
+    font-size: 2rem; /* Sesuaikan ukuran teks sesuai keinginan */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .section3 {
+    display: flex;
+    flex-wrap: wrap; /* Mengatasi perubahan ukuran layar dengan wrap flex items */
+    justify-content: center;
+  }
+
+  .feature-box3 {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-box3 i {
+    font-size: 3rem;
+    color: #30A430;
+  }
+
+  .feature-heading3 {
+    font-size: 1.5rem; /* Sesuaikan ukuran teks sesuai keinginan */
+  }
+
+  .feature-description {
+    font-size: 1rem; /* Sesuaikan ukuran teks sesuai keinginan */
+  }
+
+  @media (max-width: 1024px) {
+    .feature-title3 {
+      font-size: 1.5rem; /* Mengurangi ukuran teks di layar laptop kecil */
+    }
+
+    .feature-box3 {
+      flex: 1;
+    }
+
+    .feature-heading3 {
+      font-size: 1.2rem; /* Mengurangi ukuran teks di layar laptop kecil */
+    }
+
+    .feature-description {
+      font-size: 1rem; /* Mengurangi ukuran teks di layar laptop kecil */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature-title3 {
+      font-size: 1.2rem; /* Mengurangi ukuran teks di layar tablet dan ponsel */
+    }
+
+    .feature-box3 {
+      flex: 1;
+    }
+
+    .feature-heading3 {
+      font-size: 1rem; /* Mengurangi ukuran teks di layar tablet dan ponsel */
+    }
+
+    .feature-description {
+      font-size: 0.9rem; /* Mengurangi ukuran teks di layar tablet dan ponsel */
+    }
+  }
+
+
+  /* CSS responsif */
+@media (max-width: 768px) {
+    .about-content4 {
+        flex-direction: column; /* Mengubah layout ke vertikal di layar kecil */
+    }
+
+    .about-image4 img {
+        margin-right: 0; /* Hapus margin kanan gambar di layar kecil */
+    }
+
+    .about-title4, .about-title4text {
+        margin-left: 0; /* Hapus margin kiri judul di layar kecil */
+        text-align: center; /* Pusatkan teks di layar kecil */
+    }
+}
+
+/* CSS responsif */
+@media (max-width: 768px) {
+    .section5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo5 img {
+        margin-bottom: 20px;
+    }
+
+    .contact-info5 {
+        flex-direction: column;
+    }
+
+    .left-info5, .right-info5 {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+/* CSS responsif */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-center {
+        margin: 10px 0;
+    }
+
+    .footer-right {
+        margin: 10px 0;
+    }
+}
